@@ -836,7 +836,11 @@ def main(argv):
                                               "extra_script=",
                                               "worker_threads=",
                                               "aslr_mode=",
+<<<<<<< HEAD
                                               ],
+=======
+                                              "override_device="],
+>>>>>>> 7f465e3... fix BUILD_PROP_OVERRIDES
                              extra_option_handler=option_handler)
 
   if len(args) != 2:
