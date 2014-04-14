@@ -25,6 +25,7 @@ PRODUCT_PACKAGES := \
     Calculator \
     Camera2 \
     CertInstaller \
+    CMFileManager \
     Email \
     Exchange2 \
     FusedLocation \
