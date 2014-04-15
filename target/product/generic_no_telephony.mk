@@ -26,6 +26,7 @@ PRODUCT_PACKAGES := \
     Camera2 \
     CertInstaller \
     CMFileManager \
+    DSPManager \
     Email \
     Exchange2 \
     FusedLocation \
