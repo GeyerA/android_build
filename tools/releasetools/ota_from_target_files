@@ -984,6 +984,7 @@ def main(argv):
                                               "aslr_mode=",
                                               "two_step",
                                               ],
+                                              "override_device="],
                              extra_option_handler=option_handler)
 
   if len(args) != 2:
