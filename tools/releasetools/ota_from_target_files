@@ -522,9 +522,9 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   script.Print("                Calo's Liscio              ")
   script.Print("               by Andreas Geyer            ")
   script.Print("")
-  script.Print("               enjoy pure AOSP             ")
-  script.Print("")
-  script.Print("                 Calo 2014                 ")
+  script.Print("                enjoy pure CM              ")
+  script.Print("                 at it's best              ")
+  script.Print("                  Calo 2014                ")
 
 
   if OPTIONS.wipe_user_data:
