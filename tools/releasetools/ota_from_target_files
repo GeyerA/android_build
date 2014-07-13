@@ -1060,7 +1060,6 @@ def main(argv):
                                               "override_device=",
                                               "override_prop=",
                                               "no_separate_recovery=",
-                                              ],
                                               "override_device="],
                              extra_option_handler=option_handler)
 
