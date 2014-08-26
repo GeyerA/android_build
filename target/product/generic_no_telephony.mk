@@ -20,6 +20,7 @@
 PRODUCT_POLICY := android.policy_phone
 
 PRODUCT_PACKAGES := \
+    AndroidKernelTweaker \
     Apollo \
     DeskClock \
     Bluetooth \
