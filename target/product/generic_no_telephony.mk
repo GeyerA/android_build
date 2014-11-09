@@ -18,11 +18,12 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    Apollo \
     Bluetooth \
     Camera2 \
+    CMFileManager \
+    DSPManager \
     Gallery2 \
-    Music \
-    MusicFX \
     OneTimeInitializer \
     Provision \
     SystemUI \
