@@ -23,6 +23,7 @@ PRODUCT_PACKAGES := \
     Camera2 \
     CMFileManager \
     DSPManager \
+    libcyanogen-dsp \
     Gallery2 \
     OneTimeInitializer \
     Provision \
