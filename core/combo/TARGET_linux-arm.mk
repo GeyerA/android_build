@@ -67,16 +67,67 @@ $(combo_2nd_arch_prefix)TARGET_STRIP := $($(combo_2nd_arch_prefix)TARGET_TOOLS_P
 
 $(combo_2nd_arch_prefix)TARGET_NO_UNDEFINED_LDFLAGS := -Wl,--no-undefined
 
-$(combo_2nd_arch_prefix)TARGET_arm_CFLAGS :=    -O2 \
+$(combo_2nd_arch_prefix)TARGET_arm_CFLAGS :=    -O3 \
+                        -pipe \
+			-DNDEBUG \
                         -fomit-frame-pointer \
                         -fstrict-aliasing    \
-                        -funswitch-loops
+                        -funswitch-loops \
+                        -fno-tree-vectorize \
+                        -fno-inline-functions \
+                        -fgcse-after-reload \
+                        -fno-ipa-cp-clone \
+                        -fno-vect-cost-model \
+			-funsafe-loop-optimizations \
+			-fsection-anchors \
+			-fivopts \
+			-ftree-loop-im \
+			-ftree-loop-ivcanon \
+			-ffunction-sections \
+			-fdata-sections \
+			-frename-registers \
+			-fomit-frame-pointer \
+			-fgcse-sm \
+			-fgcse-las \
+			-fweb \
+			-ftracer \
+			-Wno-error=unused-parameter \
+                        -Wno-error=unused-but-set-variable \
+			-Wno-error=maybe-uninitialized 
 
 # Modules can choose to compile some source as thumb.
 $(combo_2nd_arch_prefix)TARGET_thumb_CFLAGS :=  -mthumb \
-                        -Os \
+                        -O3 \
+                        -pipe \
                         -fomit-frame-pointer \
-                        -fno-strict-aliasing
+                        -fno-strict-aliasing \
+                        -fno-tree-vectorize \
+                        -fno-inline-functions \
+                        -fno-unswitch-loops \
+                        -fgcse-after-reload \
+                        -fno-ipa-cp-clone \
+                        -fno-vect-cost-model \
+			-DNDEBUG \
+			-funsafe-loop-optimizations \
+			-fsection-anchors \
+			-fivopts \
+			-ftree-loop-im \
+			-ftree-loop-ivcanon \
+			-ffunction-sections \
+			-fdata-sections \
+			-funswitch-loops \
+			-frename-registers \
+			-frerun-cse-after-loop \
+			-fgcse-sm \
+			-fgcse-las \
+			-fweb \
+			-ftracer \
+                        -Wno-error=unused-parameter \
+                        -Wno-error=unused-but-set-variable \
+			-Wno-error=maybe-uninitialized \
+			-Wno-error=clobbered \
+			-Wno-error=strict-overflow
+
 
 # Set FORCE_ARM_DEBUGGING to "true" in your buildspec.mk
 # or in your environment to force a full arm build, even for
@@ -144,12 +195,56 @@ $(combo_2nd_arch_prefix)TARGET_GLOBAL_CPPFLAGS += -fvisibility-inlines-hidden
 
 # More flags/options can be added here
 $(combo_2nd_arch_prefix)TARGET_RELEASE_CFLAGS := \
+			-fvisibility-inlines-hidden \
+			-O3 \
 			-DNDEBUG \
+			-funsafe-loop-optimizations \
+			-fsection-anchors \
+			-fivopts \
+			-ftree-loop-im \
+			-ftree-loop-ivcanon \
+			-ffunction-sections \
+			-fdata-sections \
+			-funswitch-loops \
+			-pipe \
+			-fomit-frame-pointer \
+			-fgcse-sm \
+			-fgcse-las \
+			-fweb \
+			-ftracer \
+			-Wno-error=unused-parameter \
+			-Wno-error=unused-but-set-variable \
+			-Wno-error=maybe-uninitialized
+
+# More flags/options can be added here
+$(combo_2nd_arch_prefix)TARGET_RELEASE_CFLAGS := \
+			-O3 \
+			-DNDEBUG \
+                        -pipe \
 			-g \
 			-Wstrict-aliasing=2 \
 			-fgcse-after-reload \
 			-frerun-cse-after-loop \
-			-frename-registers
+			-frename-registers \
+			-fno-ipa-cp-clone \
+			-fno-vect-cost-model \
+			-fno-strict-aliasing \
+			-funsafe-loop-optimizations \
+			-fsection-anchors \
+			-fivopts \
+			-ftree-loop-im \
+			-ftree-loop-ivcanon \
+			-ffunction-sections \
+			-fdata-sections \
+			-funswitch-loops \
+			-fomit-frame-pointer \
+			-fgcse-sm \
+			-fgcse-las \
+			-fweb \
+			-ftracer \
+			-Wno-error=unused-parameter \
+			-Wno-error=unused-but-set-variable \
+			-Wno-error=maybe-uninitialized
 
 libc_root := bionic/libc
 libm_root := bionic/libm
