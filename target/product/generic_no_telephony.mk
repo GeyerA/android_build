@@ -27,7 +27,6 @@ PRODUCT_PACKAGES := \
     audio_effects.conf \
     libcyanogen-dsp \
     OneTimeInitializer \
-    Provision \
     SystemUI \
     WallpaperCropper
 
