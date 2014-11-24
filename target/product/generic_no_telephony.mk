@@ -26,7 +26,6 @@ PRODUCT_PACKAGES := \
     libcyanogen-dsp \
     Gallery2 \
     OneTimeInitializer \
-    Provision \
     SystemUI \
     WallpaperCropper
 
