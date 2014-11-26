@@ -20,7 +20,6 @@
 PRODUCT_PACKAGES := \
     Apollo \
     Bluetooth \
-    Camera2 \
     CMFileManager \
     DSPManager \
     libcyanogen-dsp \
