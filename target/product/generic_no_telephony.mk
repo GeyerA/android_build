@@ -19,7 +19,7 @@
 
 PRODUCT_PACKAGES := \
     Bluetooth \
-    Camera2 \
+    CMFileManager \
     Gallery2 \
     Music \
     MusicFX \
