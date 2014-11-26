@@ -20,7 +20,6 @@
 PRODUCT_PACKAGES := \
     Eleven \
     Bluetooth \
-    Camera2 \
     CMFileManager \
     DSPManager \
     Gallery2 \
