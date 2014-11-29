@@ -49,6 +49,15 @@ PRODUCT_PACKAGES += \
     vibrator.default \
     power.default
 
+# Extra tools
+PRODUCT_PACKAGES += \
+    zip \
+    unrar
+
+# Busybox
+PRODUCT_PACKAGES += \
+     Busybox \
+
 PRODUCT_COPY_FILES := \
         frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
 
