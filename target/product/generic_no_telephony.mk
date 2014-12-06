@@ -18,13 +18,14 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    audio_effects.conf \
     Eleven \
     Bluetooth \
     CMFileManager \
     DSPManager \
     Gallery2 \
-    audio_effects.conf \
     libcyanogen-dsp \
+    LockClock \
     OneTimeInitializer \
     SystemUI \
     WallpaperCropper
