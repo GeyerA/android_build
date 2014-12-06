@@ -23,6 +23,7 @@ PRODUCT_PACKAGES := \
     CMFileManager \
     DSPManager \
     libcyanogen-dsp \
+    LockClock \
     Gallery2 \
     OneTimeInitializer \
     SystemUI \
