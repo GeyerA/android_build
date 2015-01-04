@@ -19,13 +19,13 @@
 
 PRODUCT_PACKAGES := \
     AndroidKernelTweaker \
-    Apollo \
     Bluetooth \
     CMFileManager \
     DSPManager \
+    Eleven \
+    Gallery2 \
     libcyanogen-dsp \
     LockClock \
-    Gallery2 \
     OneTimeInitializer \
     SystemUI \
     WallpaperCropper
