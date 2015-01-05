@@ -61,10 +61,11 @@ PRODUCT_PACKAGES += \
 
 # Busybox
 PRODUCT_PACKAGES += \
-     Busybox \
+     Busybox
 
 PRODUCT_COPY_FILES := \
         frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf \
+        system/core/rootdir/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml \
         system/core/rootdir/etc/hosts.alt:system/etc/hosts.alt \
         system/core/rootdir/etc/hosts.og:system/etc/hosts.og
 
