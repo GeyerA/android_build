@@ -97,6 +97,10 @@ else
   endif
 endif
 
+ifeq ($(USE_STRICT),true)
+include $(BUILD_SYSTEM)/strict.mk
+endif
+
 ifeq ($(KRAIT_TUNINGS),true)
 ifndef LOCAL_IS_HOST_MODULE
 include $(BUILD_SYSTEM)/krait.mk
