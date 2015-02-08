@@ -49,10 +49,10 @@ $(combo_var_prefix)HAVE_STRLCPY := 0
 $(combo_var_prefix)HAVE_STRLCAT := 0
 $(combo_var_prefix)HAVE_KERNEL_MODULES := 0
 
-$(combo_var_prefix)GLOBAL_CFLAGS := -O3 -DNDEBUG -fivopts -ffunction-sections -fdata-sections -funswitch-loops -fomit-frame-pointer -ftracer -fno-exceptions -Wno-multichar -pipe
-$(combo_var_prefix)RELEASE_CFLAGS := -O3 -DNDEBUG -fno-strict-aliasing -fivopts -ffunction-sections -fdata-sections -funswitch-loops -fomit-frame-pointer -ftracer -pipe
-$(combo_var_prefix)GLOBAL_CPPFLAGS := -O3 -DNDEBUG -fivopts -ffunction-sections -fdata-sections -funswitch-loops -pipe -fomit-frame-pointer -ftracer
-$(combo_var_prefix)GLOBAL_LDFLAGS := 
+$(combo_var_prefix)GLOBAL_CFLAGS := -fno-exceptions -Wno-multichar
+$(combo_var_prefix)RELEASE_CFLAGS := -O2 -g -fno-strict-aliasing
+$(combo_var_prefix)GLOBAL_CPPFLAGS :=
+$(combo_var_prefix)GLOBAL_LDFLAGS :=
 $(combo_var_prefix)GLOBAL_ARFLAGS := crsPD
 $(combo_var_prefix)GLOBAL_LD_DIRS :=
 
