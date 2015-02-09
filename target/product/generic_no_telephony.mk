@@ -22,9 +22,10 @@ PRODUCT_PACKAGES := \
     Bluetooth \
     CMFileManager \
     DSPManager \
+    audio_effects.conf \
+    libcyanogen-dsp \
     Eleven \
     Gallery2 \
-    libcyanogen-dsp \
     LockClock \
     OneTimeInitializer \
     SystemUI \
