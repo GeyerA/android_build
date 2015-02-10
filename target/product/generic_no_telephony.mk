@@ -21,10 +21,6 @@ PRODUCT_PACKAGES := \
     AndroidKernelTweaker \
     Bluetooth \
     CMFileManager \
-    DSPManager \
-    audio_effects.conf \
-    libcyanogen-dsp \
-    Eleven \
     Gallery2 \
     LockClock \
     OneTimeInitializer \
