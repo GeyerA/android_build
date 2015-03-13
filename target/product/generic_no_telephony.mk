@@ -18,9 +18,14 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    Eleven \
     Bluetooth \
     Camera2 \
+    CMFileManager \
+    DSPManager \
     Gallery2 \
+    audio_effects.conf \
+    libcyanogen-dsp \
     OneTimeInitializer \
     Provision \
     SystemUI \
