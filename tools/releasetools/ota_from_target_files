@@ -553,6 +553,17 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_progress = 0.75
 
+  script.ShowProgress(0.5, 0)
+  script.Print("")
+  script.Print("")
+  script.Print("                Calo's Liscio              ")
+  script.Print("            F A S T  F O R W A R D         ")
+  script.Print("               by Andreas Geyer            ")
+  script.Print("")
+  script.Print("               enjoy pure AOSP             ")
+  script.Print("")
+  script.Print("                  Calo 2015                ")
+
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
   if HasVendorPartition(input_zip):
