@@ -18,12 +18,15 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    audio_effects.conf \
+    Eleven \
     Bluetooth \
     Camera2 \
     CMFileManager \
+    DSPManager \
     Gallery2 \
-    Music \
-    MusicFX \
+    libcyanogen-dsp \
+    LockClock \
     OneTimeInitializer \
     Provision \
     SystemUI \
