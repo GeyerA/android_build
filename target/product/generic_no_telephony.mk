@@ -18,6 +18,7 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    AndroidKernelTweaker \
     audio_effects.conf \
     Eleven \
     Bluetooth \
