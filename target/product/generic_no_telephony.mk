@@ -31,6 +31,7 @@ PRODUCT_PACKAGES := \
     OneTimeInitializer \
     Provision \
     SystemUI \
+    Terminal \
     WallpaperCropper
 
 PRODUCT_PACKAGES += \
