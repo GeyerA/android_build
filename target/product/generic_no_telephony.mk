@@ -20,9 +20,9 @@
 PRODUCT_PACKAGES := \
     Bluetooth \
     BluetoothMidiService \
+    CMFileManager \
+    DSPManager \
     Gallery2 \
-    Music \
-    MusicFX \
     OneTimeInitializer \
     SystemUI \
     WallpaperCropper
@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     local_time.default \
     vibrator.default \
     power.default
+
+# Busybox
+PRODUCT_PACKAGES += \
+     Busybox
 
 PRODUCT_COPY_FILES := \
         frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
