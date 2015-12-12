@@ -18,11 +18,13 @@
 # It includes the base Android platform.
 
 PRODUCT_PACKAGES := \
+    audio_effects.conf \
     Bluetooth \
     Camera2 \
+    DSPManager \
     Gallery2 \
+    libcyanogen-dsp \
     Music \
-    MusicFX \
     OneTimeInitializer \
     Provision \
     SystemUI \
